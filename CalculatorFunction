@@ -1,0 +1,26 @@
+<!DOCTYPE html><script>
+'use strict';
+
+  function cal(){
+    let a = +prompt('a','');
+    let b = +prompt('b','');
+    let c = prompt('Оператор','');
+        switch (c) {
+          case '+':
+            return a+b;
+            break;
+          case '-':
+            return a-b;
+            break;
+          case '/':
+            return a/b;
+            break;
+          case '*':
+            return a*b;
+            break;
+    }
+
+};
+alert(cal());
+
+</script>
