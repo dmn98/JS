@@ -8,7 +8,7 @@
       return false;
     }
     let b = +prompt('b','');
-    if(Number(b)){} else {
+      if(Number(b)){} else {
       alert('Только числа бля');
       return false;
     }
