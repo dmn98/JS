@@ -3,7 +3,15 @@
 
   function cal(){
     let a = +prompt('a','');
+      if(Number(a)){} else {
+      alert('Только числа бля');
+      return false;
+    }
     let b = +prompt('b','');
+    if(Number(b)){} else {
+      alert('Только числа бля');
+      return false;
+    }
     let c = prompt('Оператор','');
         switch (c) {
           case '+':
