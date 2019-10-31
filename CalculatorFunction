@@ -1,34 +1,32 @@
-<!DOCTYPE html><script>
-'use strict';
+<script>
+  'use strict';
 
-  function cal(){
-    let a = +prompt('a','');
-      if(Number(a)){} else {
+  function cal() {
+    let a = +prompt('a', '');
+    if (isNaN(a)) {
       alert('Только числа бля');
-      return false;
+      return;
     }
-    let b = +prompt('b','');
-      if(Number(b)){} else {
+    let b = +prompt('b', '');
+    if (isNaN(b)) {
       alert('Только числа бля');
-      return false;
+      return;
     }
-    let c = prompt('Оператор','');
-        switch (c) {
-          case '+':
-            return a+b;
-            break;
-          case '-':
-            return a-b;
-            break;
-          case '/':
-            return a/b;
-            break;
-          case '*':
-            return a*b;
-            break;
+    let c = prompt('Оператор', '');
+    switch (c) {
+      case '+':
+        alert(a + b);
+        break;
+      case '-':
+        alert(a - b);
+        break;
+      case '/':
+        alert(a / b);
+        break;
+      case '*':
+        alert(a * b);
+        break;
     }
-
-};
-alert(cal());
-
+  }
+  cal();
 </script>
