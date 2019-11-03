@@ -4,13 +4,11 @@
   function cal() {
     let a = +prompt('a', '');
     if (isNaN(a)) {
-      alert('Только числа бля');
-      return;
+      return alert('Только числа бля');
     }
     let b = +prompt('b', '');
     if (isNaN(b)) {
-      alert('Только числа бля');
-      return;
+      return alert('Только числа бля');
     }
     let c = prompt('Оператор', '');
     switch (c) {
@@ -26,6 +24,8 @@
       case '*':
         alert(a * b);
         break;
+      default:
+        alert('Неверный оператор. Вы дебил?');
     }
   }
   cal();
